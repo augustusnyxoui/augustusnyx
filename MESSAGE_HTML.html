@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <script src="java.js"></script> -->
+        <script src="https://fontawesome.com/icons"></script>
+        <link rel="stylesheet" href="MESSAGE_CSS.css">
+        <link rel="icon" href="ICON.png" type="image/x-icon">
+        <title>Epistle To Thyself - AugustusNyx</title>
+    </head>
+    
+    <body>
+        <div class="slide-in">
+
+            <div class="container">
+                <div class="navbar">
+                <a href="MAIN_HTML.html">
+                    <img src="LOGO.png" class="logo">
+                </a>
+                    <h2>AugustusNyx</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="MAIN_HTML.html">HOME</a></li>
+                            <li><a href="MYSELF_HTML.html">ABOUT</a></li>
+                            <li><a href="FAMILY_HTML.html">MORE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            <div class="box">
+                <h1><b>AN EPISTLE TO THY SELF</b></h1>
+                <img src="AMIEL.jpg" alt="" class="box-img">
+                <h2>TO: MANUEL AMIEL VILAR</h2><br><hr>
+
+            <button class="accordion">PLANS AFTER GRADUATING</button>
+                <div class="panel">
+                    <p style="text-align: center;"><br>
+                        Right now, I find myself contemplating the path ahead with a mix of excitement and uncertainty. 
+                        Securing a job is certain, but different opportunities within the IT industry presents a challenge for me in 
+                        identifying the most fitting role for my skills and aspirations. However, I view this uncertainty as an important part of my journey, 
+                        one that will unfold as I navigate through the chapters of my career. What remains unequivocal is my desire to 
+                        pursue a profession that ignites my passion and fills each day with anticipation and inspiration.
+                    </p><br>
+                </div>
+
+            <button class="accordion">MESSAGE TO MY "SELVES"</button>
+                <div class="panel">
+                    <p style="text-align: center;"><br>
+                        <b>PRESENT SELF</b><br>
+                        To my present self, I am so proud of how far you've come and I am happy that you are starting to be more true to yourself. 
+                        You're still young so explore things and keep doing the things you love. Keep the passion burning for the things you love to 
+                        do and most of all, work and study hard. Times may get tough but know that everyhting will pay off well in the end. Fighting!<br>
+                        <br>
+                        <b>FUTURE SELF</b><br>
+                        To my future self, I don't know what you are and what you do nor I have the faintest idea whether the dreams that were once ingrained in 
+                        your mind were materialized or achieved. Whatever it may be, I am proud of you and know that I am always rooting for you. You're probably 
+                        not far off the distant future so I would assume you still have a lot of time but be aware that time can pass by fast with all the happy 
+                        and joyous moments you encounter. With that said, do the things you want to do so in the end you won't regret anything and even if you 
+                        think it's something your bound not to succeed in doing, always remember this, "Make mistakes but don't regret them, learn from them.
+                        <br><br>
+                    </p>
+                </div>
+
+            <button class="accordion">PROFEȚIE DESPRE MINE</button>
+                <div class="panel"><p>
+                    <p style="text-align: center;">
+                        <br>
+                        "In the tapestry of fate, woven with threads of time, lies a prophecy of profound significance. As the dawn of destiny draws near, 
+                        the echoes of ancient wisdom resonate through the ages, guiding the seekers of truth toward their destined path. Amidst the swirling 
+                        currents of uncertainty, a beacon of hope emerges, illuminating the way forward with its radiant light. Embrace the whispers of the 
+                        cosmos, for within their sacred secrets lies the key to unlocking the boundless potential that resides within each soul. Let courage 
+                        be your compass, and faith your steadfast companion, as you embark on a journey of self-discovery and fulfillment. For in the tapestry 
+                        of fate, every thread holds the power to weave miracles, and every moment is imbued with the magic of possibility."
+                        <br><br>
+                    </p>
+                </div>
+        </div>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+                var i;
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('.slide-in').classList.add('animate');
+            });   
+        </script>
+    </body>
+
+</html>

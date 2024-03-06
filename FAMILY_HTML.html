@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="FAMILY_CSS.css">
+        <link rel="icon" href="ICON.png" type="image/x-icon">
+        <title>My Family - AugustusNyx</title>
+    </head>
+    <body>
+        <div class="slide-in">
+            <div class="container">
+                <div class="navbar">
+                <a href="MAIN_HTML.html">
+                    <img src="LOGO.png" class="logo">
+                </a>
+                    <h2>AugustusNyx</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="MAIN_HTML.html">HOME</a></li>
+                            <li><a href="MYSELF_HTML.html">ABOUT</a></li>
+                            <li><a href="FAMILY_HTML.html">MORE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            <div class="box">
+                <img src="AMIEL.jpg" alt="" class="box-img">
+                <h1><b>MANUEL AMIEL VILAR'S</b></h1>
+                <h2>FAMILY</h2>
+            <br>
+        <hr>
+        <button class="accordion">PARENTS</button>
+            <div class="panel">
+                <img src="1DADI.jpg" alt="" class="img">
+                <br>
+                <h2>FATHER</h2>
+                <p><b>Father's Name:</b> Manuel G. Vilar</p>
+                <p><b>Occupation:</b> Chief Cook</p>
+            <br>
+            <hr>
+                 <img src="1MAMI.jpg" alt="" class="img">
+                <br>
+                <h2>MOTHER</h2>
+                <p><b>Name:</b> Maylene A. Vilar</p>
+                <p><b>Occupation:</b> Housewife</p>
+            </div>
+        <button class="accordion">SIBLINGS</button>
+            <div class="panel">
+                <img src="1MIKA.jpg" alt="" class="img">
+                <br>
+                <h2>ELDEST CHILD</h2>
+                <p><b>Name:</b> Ana Mikaela A. Vilar</p>
+                <p><b>Occupation:</b> IT Analyst</p>
+            <br>
+            <hr>
+                 <img src="1YMARI.jpg" alt="" class="img">
+                <br>
+                <h2>MIDDLE CHILD</h2>
+                <p><b>Name:</b> Kristiana Ymari Lavender A. Vilar</p>
+            </div>
+         <button class="accordion">GALLERY</button>
+            <div class="panel">
+            <img src="1VILAR1.jpg" width="442.5px" height="250px">
+            <img src="1VILAR2.jpg" width="442.5px" height="250px">
+            <img src="1VILAR3.jpg" width="442.5px" height="250px">
+            <img src="1VILAR4.jpg" width="442.5px" height="250px">
+            <img src="1VILAR5.jpg" width="442.5px" height="250px">
+             </div>
+             </div>
+            </div>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('.slide-in').classList.add('animate');
+            });     
+        </script>
+
+    </body>
+</html>
